@@ -1,0 +1,25 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production UV_THREADPOOL_SIZE=100 webpack --config webpack.config",
+    "start": "start npm run dev:server",
+    "dev:server": "webpack-dev-server --history-api-fallback",
+    "prod:build": "webpack --optimize-minimize --progress --colors"
+  },
+  "author": "Eve",
+  "license": "MIT",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack": "^3.0.0",
+    "webpack-dev-server": "^2.5.0"
+  },
+  "dependencies": {
+    "autoprefixer": "^7.1.2",
+    "babel-loader": "^7.1.1"
+  }
+}
